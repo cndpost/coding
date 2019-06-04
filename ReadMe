@@ -1,0 +1,340 @@
+
+Purpose:
+
+This repo contains my collections of the coding exercises that you may encounter during a coding interviews.
+
+Initially most of the materials of this repo's questions and solutions come from a website called http://www.geeks4geeks.org. 
+I supplied the detailed C++ implementation. I found that the collection in this website is more complete and useful than the 
+coding exercises provided by the popular book of "Cracking the coding interview" by Gayle L. McDowell.
+
+Coding screening interview by phone usually limited to algorithms involing an array of integer numbers. More complexed 
+algorithms are left to an onsite interview session done on a white board or over a shared screen. 
+
+I find myself doing these exercise is a good way to get myself concentrated and be in a conquering mode when facing a coding interviewer. 
+It is way better than reading a lot of books and memorizing a lot of things but easily collapsed when facing a hard or tricky question.
+
+Doing those exercises on regular basis is also a good way to keep the mind of an old programmer to be refresh and a good exercise to keep a
+an energetic body and mind. 
+
+
+Array of integers:
+
+Array of integer exercises will have one of following problems listed and you are asked to describe an algorithm for it 
+over the phone or write it on an one page screen shared with the interviewer.
+
+
+Problems:
+
+ 1. Subarray with give sum
+ 2. Kadane's algorithm
+ 3. Missing number in array
+ 4. Subarray with given sum
+ 5. Sort an array of 0s, 1s and 2s
+ 6. Equilibrium point
+ 7. Maximum sum increasing subsequence
+ 8. Leaders in an array
+ 9. Minimum platforms
+ 10. Maximum of all subarrays of size Kadane
+ 11. Reverse array in groups
+ 12. K'th smallest element
+ 13. Trapping rain water
+ 14. Pythagorean triplet
+ 15. Chocolate distribution problems
+ 16. Stock buy and sell
+ 17. Element with left side smaller and right side greater
+ 18. Convert array into Zig-Zag fashion
+ 19. Find the element that appears once in a sorted array
+ 20. K-th largest element in a stream
+ 21. Relative sorting
+ 22. Spirally traversing a matrix
+ 23. Sorting elements of an array by frequency
+ 24. Largest number formed from an array
+ 25. Largest subarray of 0's and 1'screen
+
+
+Strings:
+
+  String exercises are involving with the character manipulation of a single word, the character manipulation of a few words in a sentence,
+  or the substring manipulation or search with certain criteria. 
+
+  String problems are another categories of problems that is easier to describe over the phone or over a shared screen and can be coded in 
+  a single screen of code or so.
+
+Problems:
+
+  1. Parenthesis checker
+  2. Reverse words in a given String
+  3. Permutation of a given String
+  4. Longest pallindrome in a String
+  5. Recursively remove all adjacent duplicates
+  5. Check if string is rotated by two places
+  6. Roman number to integer
+  7. Anagram
+  8. longest common substring
+  9. Remove duplicates
+  10. Form a pallindrome
+  11. Longest distinct characters in the string
+  12. Implement atoi
+  13. Implement strstr
+  14. Longest common prefix
+
+
+Linked list:
+
+    Linked list problems mostly used during an onsite interview or interview on a shared screen. This type of questions take time to complete the
+    code and it needs one or more screens to hold the whole answer. But the varieties of the problems are much less than the array of integers.
+
+Problems:
+
+1. Finding middle element in a linked list
+2. Reverse a linked list
+3. Rotate a linked list
+4. Reverse a linked list in groups of given size
+5. Detect loop in a linked list
+6. Remvoe loop in a linked list
+7. n-th node from end of linked list
+8. Flattening a linked list
+9. Merge two sorted linked list
+10. Intersection point of two linked list
+11. Pairwise swap of a linked list
+12. Add two numbers represented by linked list
+13. Check if linked list is pallindrome
+14. Implement queue using linked list
+15. Implement stack using linked list
+16. Given a linked list of 0's, 1's and 2's, sort it.
+17. Delete without head pointer
+
+                                
+
+Stack and queue
+
+Problems:
+
+1. Next largest element
+2. Queue using two stacks
+3. Stack using two queues
+4. Get minimum element from stack
+5. LRU cache
+6. Circular tour
+7. First non-repeating character in a stream
+8. Rotten Orange
+
+Tree:
+
+Problems:
+
+1. Print left view of bianry Tree
+2. Check for BST
+3. Print bottom view of bianry Tree
+4. Print a binary tree in vertical order
+5. Level order traversal in spiral formed
+6. Connect nodes at same Level
+7. Lowest common ancestor in a BST
+8. Covert a given binary tree to double linked list
+9. Write code to determine if two trees are identical or not
+10. Given a bianry tree, check whether it is a mirror of itself
+11. Height of a binary tree
+12. Maximum path sum
+13. Diameter of a binary tree
+14. Number of leaf nodes
+15. Check if a given binary tree is height balanced or not
+16. Serialize an deserialize a binary tree
+
+Heap:
+
+Problem:
+
+1. Find median in a stream
+2. Heap sort
+3. Operations on binary min Heap
+4. Rearrange characters
+5. Kth largest element in a stream
+6. Merge K sorted linked lists
+
+Recursion:
+
+Problems:
+
+1. Flood fill algorithms
+2. Number of Parenthesis
+3. Combination sum - part 2
+4. Special keyboard
+5. Water overflow
+6. Josephus problems
+
+Hashing:
+
+Problems:
+
+1. Largest subarray with 0 sum
+2. Swapping pairs make sum equal
+3. Count distinct elements in every window
+4. Array pair sum divisibility problems
+5. Largest consecutive subsequence
+6. Array subset of another array
+7. Find all paris with a given sum
+8. Find first repeated character
+9. Zero sum subarray
+10. Minimum indexed character
+11. Check if two arrays are equal or not
+12. Uncommon characters
+13. Smallest window in a string containing all the characters of another string
+14. First element to occur K times
+15. Check if frequencies can be equal
+
+
+Graph:
+
+Problems:
+
+1. Depth first traversal
+2. Breadth first traversal
+3. Detect cycle in a directed Graph
+4. Topological sort
+5. Find the number of islands
+6. Implementing Dijkstra
+7. Minimum swaps
+8. Strongly connected components
+9. Fhortest source to destination path
+10. Find whether path exist
+11. Minimum cost path
+12. Cicle of Strings
+13. Floyd warshall
+14. Alien dictionary
+15. Snake and Ladder problems
+
+Greedy:
+
+Problems:
+
+1. Activity selection
+2. N meetings in one room
+3. Coin piles
+4. Minimum number of contains
+5. Maximize toys
+6. Page faults in LRU
+7. Largest number possible
+8. Minimize the heights
+9. Minimize the sum of products
+10. Huffman decoding
+11. Max length chain
+12. Minimum spanning tree
+13. Minimum Operations
+14. Shop in candy store
+15. Geek collects the balls
+
+
+Dynamic Programming:
+
+Problems:
+
+1. Longest increasing subsequence
+2. Longest common subsequence
+3. 0 - 1 knapsack problems
+4. Minimum number of jumps
+5. Edit distance
+6. Coin change problem
+7. Subset sum problem
+8. Box stacking
+9. Rod cutting
+10. Path in matrix
+11. Minimum sum partition
+12. Count number if ways to cover a distance
+13. Egg dopping puzzle
+14. Optimal strategy for a game
+15. Shortest common supersequence
+
+Divide and Conquer:
+
+Problems:
+
+1. Binary search
+2. Quick sort
+3. Merge sort
+4. Find the element that appears once in a sorted array
+5. K-th element of two sorted array
+6. Last index of one
+
+Backtracking:
+
+Problems:
+
+1. N-queen problem
+2. Solve the sodoku
+3. Rat in a maze problem
+4. Word boggle
+5. Generate IP addresses
+
+Bit Magic:
+
+Problems:
+
+1. Find first set bit
+2. Rightmost different bit
+3. Check whether K-th bit is set or not
+4. Toggle bits given range 
+5. Set kth bit
+6. Power of 2
+7. Bit difference
+8. Rotate bits
+9. Swap all odd and even bits
+10. Count total set bits
+11. Longest consecutive 1's 
+12. Sparse number
+13. Alone in a couple
+14. Maximize subset XOR
+
+
+Some more questions on arrays:
+
+Problems:
+
+1. Most frequent word in an array of Strings
+2. Find missing and repeating
+3. Maximum index
+4. Search in a rotated array
+5. Sum of middle elements of two sorted arrays
+6. Consecutive 1's not allowed
+7. Majority element
+8. Two numbers with sum closest to Zero
+9. Nuts and bolts problem
+10. Boolean matrix problem
+11. K-th smallest element
+12. Find all four sum numbers
+13. Common elements
+14. Smallest positive missing number
+15. Count the triplets
+16. Maximum index
+17. Jumping caterpillarts
+
+
+Some more questions on strings:
+
+Problems:
+
+1. CamelCase pattern matching
+2. String ignorance
+3. Smallest window in a string containing all the characters of another string
+4. Design a tiny URL or URL shortener
+5. Permutation of a given string
+6. Non repeating characters
+7. Check if strings are rotations of each other or not
+8. Save ironman
+9. Repeated character
+10. Remove common characters and concatenate
+11. Geek and its colored strings
+12. Second most repeated string in a sequence
+
+
+Some more questions on trees:
+
+Problems:
+
+1. Mirror tree
+2. Longest consecutive sequence in binary tree
+3. Bottom view of binary tree
+4. Lowest common ancestor in a binary tree
+
+
+
+
