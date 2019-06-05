@@ -26,7 +26,7 @@ over the phone or write it on an one page screen shared with the interviewer.
 Problems:
 
  1. Subarray with give sum
- 2. Kadane's algorithm
+ 2. Kadane's algorithm - for largest sum contiguous subarray 
  3. Missing number in array
  4. Subarray with given sum
  5. Sort an array of 0s, 1s and 2s
@@ -338,3 +338,22 @@ Problems:
 
 
 
+Algorithms dealing with the problems in the book of "Real world algorithm - A beginer's guide" 
+
+1. Stock span problem  - Given an array of N days quote, find the span (continuous N days whose quote <= today) of each day.
+    The key is to reduce the brutal force approach with O(n*n) complexity to an approach using stack with O(n) complexity
+
+   The key algorithm is: When do span caculation, we pop out all those j where q[j] is <= q[i]. Then push current i.
+    total pushs are N, total pops are at most N, whole loop is N, so total complexity is O(N). 
+    
+   The key operation is: stack has poped all those shadowed by last landmark along the way. This reduced the number of comparisons needed.
+
+2. Labyrinth maze problem - DFT and BFT of a graph represented by a boolean matrix. 
+3. Compression: Huffman coding (rep higher frequency letter in less bits), LZW coding by N-gram dictionary (rep longer vocabulary in extra dictionary space).
+   Decompressing Huffman coding takes a bits (binary tree) walk, when leaf reached, a character (or vocabulary) is printed out. No bits boundary is needed.
+   The Huffman decompression lookup binary tree and the encoding mapping for ASCII is fixed. So can be for other languages. The binary tree need be precalculated.
+   Compressing and Decompressing by LZW do not need transfer the dictionary table but it can be generated along the way and saved.
+   
+   Image compression can be done by run length of same bits. Decompression is repeating run length times
+4. Symmetric cryptography: Exchange keys by Diffie Hellman Key Exchange scheme. 
+5. Asymmetric cryprography using PKI. RSA algorithm
