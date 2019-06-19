@@ -304,8 +304,57 @@ Problems:
 13. Common elements
 14. Smallest positive missing number
 15. Count the triplets
+
+Problem: Given an array of distinct integers and a sum value. Find count of triplets with sum smaller than given sum value
+
+Algorithm:  1. Bruce Force to do a three layer loop. will have complexity of O(N*N*N)
+
+            2. A more efficient N(N*N) algorithm is:
+
+               
+
 16. Maximum index
-17. Jumping caterpillarts
+
+Problem: Given an array arr[], find the maximum j – i such that arr[j] > arr[i].
+
+Algorithm:  1. Brute Force double loop is N*(N-1) = O(N)
+
+            2. Another one is:
+            
+            The max can be n-1 if arr[n-1] > arr[0]
+            The max can be n-2 if arr[n-2] > arr[0] or arr[n-1] > arr[1] 
+            The max can be n-3 if arr[n-3] > arr[0] or arr[n-1] > arr[2] or arr[n-2] > arr[1]
+
+            This still can be O(N*N)
+
+            3. There is a O(N) algorithm: 
+
+            For each arr[i] we find its leftMin[i] and righMax[i]. Then one loop can get max (rightMax[i]-leftMinx[i])
+            The trick is to efficiently calculate out leftMin[i] and righMax[i] in O(N) time. Where:
+            leftMin[i] is min of {arr[0], arr[1], ..., arr[i]}, 
+            rightMax[i] is max of {arr[j], arr[j+1],...,arr[n-1]}
+
+            The efficient trick is:  rightMax[i] = max(arr[i], rightMax[i+1]), so we can loop from rightmost in O(N) time
+            also, leftMin[i] = min (arr[i], leftMin[i-1]), so we can loop from leftmost in O(N) time. 
+
+            So, the total time is 3N of comparisons, which is O(N).
+
+
+
+
+
+
+
+
+17. Jumping caterpillars
+
+Problem: Given N leaves numbered from 1 to N . A caterpillar at leaf 1, jumps from leaf to leaf in multiples
+ of Aj (Aj, 2Aj, 3Aj). j is specific to the caterpillar. Whenever a caterpillar reaches a leaf, it eats it a 
+ little bit.. You have to find out how many leaves, from 1 to N, are left uneaten after all K caterpillars have 
+ reached the end. Each caterpillar has its own jump factor denoted by Aj, and each caterpillar starts at leaf number 1. 
+
+Algorithm:  Do a hash mark of each leaf if it is touched by a carterpillar. Count all those not marked.
+
 
 
 Some more questions on strings:
@@ -331,12 +380,47 @@ Some more questions on trees:
 Problems:
 
 1. Mirror tree
+
+   Problem: Convert a binary tree to its mirror tree.
+
+   Algorithm: Recursively swap the left and right children. Do pre order traversal (parent, left, right).
+
+
 2. Longest consecutive sequence in binary tree
+   
+   Problem: Given a Binary Tree find the length of the longest path which comprises of nodes with consecutive values in increasing order.
+   Starting from parent to descendants.
+
+   Algorithm: Recursive and use an utility function to do the recursion. Main function to do the initial kicking. In utility function
+   the parent will pass in an expected sequence to child call as well as current length. If not match expected consective number,
+   current length reset to 1.  The global maxlength is updated before calling recursion.
+
 3. Bottom view of binary tree
-4. Lowest common ancestor in a binary tree
+
+   Problem: Printout the bottommost nodes in order of its horizontal distance. Horizontal distance HD(x) is defined as: HD(root) = 0;
+   left child is HD(x->left) = HD (x) -1;  right child is HD(x->right) = HD(x) + 1;  If multiple nodes have
+   the same horizontal distance, print out the one with greater height (bottommost). 
+
+   Algorithm: Use hash that maps the HD to a pair of (key, H). So for a given HD we have the heighest nodes. Then we print
+   out in the order of HD from map.begin() to map.end() 
 
 
+4. Lowest common ancestor  (LCA) in a binary tree
 
+   Problem: Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. 
+   
+   Algorithm: to start from root and build two path, one to each node, and then compare the paths to find 
+   the first unequal key. then the answer is the the key one step back.  Complexity = O(n).  
+   
+   If it is a BST then the complexity is the height of the tree which is O(log(n)).  BST (bininary search tree is 
+   defined as left child will be less than parent, right child will be larger than parent) has a more efficient 
+   algorithm: Just recursively visit the tree (pre-order, in order, post-order no difference), if node key is less 
+   or larger than both k1 and k2, it should be stopped and search on the other sibling. If the other sibling also has 
+   node key larger or less than both k1 and k2, then the current parent is the LCA.
+   
+
+
+================================================================================================
 
 Algorithms dealing with the problems in the book of "Real world algorithm - A beginer's guide" 
 
